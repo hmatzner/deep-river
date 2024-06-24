@@ -2,6 +2,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+seed = 41
+
 
 class Model(nn.Module):
     def __init__(self, in_features=4, h1=8, h2=9, out_features=3):
@@ -16,3 +18,8 @@ class Model(nn.Module):
         x = self.out(x)
 
         return x
+
+
+if __name__ == "__main__":
+    torch.manual_seed(seed)
+    model = Model()
