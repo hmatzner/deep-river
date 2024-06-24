@@ -1,8 +1,12 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import matplotlib.pyplot as plt
+import pandas as pd
 
-seed = 41
+
+SEED = 41
+IRIS_URL = 'https://gist.githubusercontent.com/netj/8836201/raw/6f9306ad21398ea43cba4f7d537619d0e07d5ae3/iris.csv'
 
 
 class Model(nn.Module):
@@ -21,5 +25,10 @@ class Model(nn.Module):
 
 
 if __name__ == "__main__":
-    torch.manual_seed(seed)
-    model = Model()
+    # torch.manual_seed(SEED)
+    # model = Model()
+
+    df = pd.read_csv(IRIS_URL)
+
+    # Encode and replace unique values with consecutive numbers
+    df['variety'] = pd.factorize(df['variety'])[0]
