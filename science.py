@@ -56,9 +56,6 @@ if __name__ == "__main__":
         loss = criterion(y_pred, y_train)
         losses.append(loss.detach().numpy())
 
-        if i % 10 == 0:
-            print(f'Epoch: {i} and loss: {loss}')
-
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
