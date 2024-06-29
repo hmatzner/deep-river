@@ -27,3 +27,7 @@ print(test_data)
 
 class ConvolutionalNetwork(nn.Module):
     pass
+
+
+if __name__ == '__main__':
+    ConvolutionalNetwork()
