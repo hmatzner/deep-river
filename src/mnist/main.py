@@ -22,7 +22,7 @@ test_data = datasets.MNIST(root='cnn_data',
                            download=True,
                            transform=transform)
 
-print(test_data)
+# print(test_data)
 
 
 class ConvolutionalNetwork(nn.Module):
