@@ -29,5 +29,9 @@ class ConvolutionalNetwork(nn.Module):
     pass
 
 
-if __name__ == '__main__':
+def main():
     ConvolutionalNetwork()
+
+
+if __name__ == '__main__':
+    main()
