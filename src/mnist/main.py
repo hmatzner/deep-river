@@ -11,7 +11,7 @@ from sklearn.metrics import confusion_matrix
 import matplotlib.pyplot as plt
 
 
-def preprocessing():
+class Preprocessing:
     transform = transforms.ToTensor()
 
     train_data = datasets.MNIST(root='cnn_data',
@@ -32,7 +32,7 @@ class ConvolutionalNetwork(nn.Module):
 
 
 def main():
-    preprocessing()
+    Preprocessing()
     ConvolutionalNetwork()
 
 
