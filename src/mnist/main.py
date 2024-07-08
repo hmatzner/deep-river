@@ -14,15 +14,19 @@ import matplotlib.pyplot as plt
 class Preprocessing:
     transform = transforms.ToTensor()
 
-    train_data = datasets.MNIST(root='cnn_data',
-                                train=True,
-                                download=True,
-                                transform=transform)
+    train_data = datasets.MNIST(
+        root='cnn_data',
+        train=True,
+        download=True,
+        transform=transform
+    )
 
-    test_data = datasets.MNIST(root='cnn_data',
-                               train=False,
-                               download=True,
-                               transform=transform)
+    test_data = datasets.MNIST(
+        root='cnn_data',
+        train=False,
+        download=True,
+        transform=transform
+    )
 
 # print(test_data)
 
