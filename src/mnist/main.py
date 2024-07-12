@@ -28,7 +28,7 @@ class Preprocessing:
         transform=transform
     )
 
-# print(test_data)
+    print(test_data)
 
 
 class ConvolutionalNetwork(nn.Module):
