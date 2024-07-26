@@ -32,8 +32,8 @@ class Preprocessing:
 
 
 class ConvolutionalNetwork(nn.Module):
-    def __init__(self):
-        pass
+    def __init__(self, epochs):
+        self.epochs = epochs
 
 
 def main():
