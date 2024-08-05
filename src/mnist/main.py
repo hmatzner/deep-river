@@ -28,7 +28,7 @@ class Preprocessing:
         transform=transform
     )
 
-    # print(train_data)
+    print(train_data)
 
 
 class ConvolutionalNetwork(nn.Module):
