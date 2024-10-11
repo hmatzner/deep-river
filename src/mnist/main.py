@@ -29,7 +29,7 @@ class Preprocessing:
     )
 
     # print(f'train data: {train_data}')
-    # print(f'test data: {test_data}')
+    print(f'test data: {test_data}')
 
 
 class ConvolutionalNetwork(nn.Module):
