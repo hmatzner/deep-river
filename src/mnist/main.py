@@ -28,7 +28,7 @@ class Preprocessing:
         transform=transform
     )
 
-    # print(f'train data: {train_data}')
+    print(f'train data: {train_data}')
     print(f'test data: {test_data}')
 
 
