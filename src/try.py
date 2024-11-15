@@ -1,4 +1,7 @@
+import random
 import time
+import numpy as np
+import pandas as pd
 
 
 def trying(number):
@@ -9,6 +12,17 @@ def trying(number):
 		else:
 			print(f'Good, you waited for an extra {i} seconds')
 
+	number_exp = np.array([[1, 2, 3], [4, 5, 6]])
+	df = pd.DataFrame(number_exp * number)
+	print(df)
+	return df
+
 
 def main():
-	trying(4)
+	a = np.random.randint(8)
+	print(f'The random number is {a}')
+	trying(a)
+
+
+if __name__ == '__main__':
+	main()
