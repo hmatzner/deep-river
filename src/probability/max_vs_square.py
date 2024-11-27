@@ -9,8 +9,8 @@ def calculate_max():
 
 
 def calculate_square_root():
-    square_rooted = np.sqrt(np.random.random())
-    return square_rooted
+    n3 = np.random.random()
+    return np.sqrt(n3)
 
 
 def calculate_prob(loops):
